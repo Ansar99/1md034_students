@@ -16,18 +16,18 @@
           <!--TABLE HEAD!-->
           <thead>
             <tr>
-              <th align="left">Halloumi Crush</th>
+              <th align="middle">Halloumi Crush</th>
 
-              <th align="left">Plant burger deluxe</th>
+              <th align="middle">Plant burger deluxe</th>
 
-              <th align="left">Beef trouble</th>
+              <th align="middle">Beef trouble</th>
             </tr>
           </thead>
           <!-- TABLE BODY!-->
           <tbody>
             <!-- HALLOUMI BURGER INFO-->
             <td>
-              <img src="https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg" alt = "Delicious halloumi burger" width="150" align ="middle">
+              <img src="https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg" alt = "Delicious halloumi burger" width="150" align="middle">
               <ul>
                 <li>Vegetarian halloumi burger</li>
                 <li>contains lactose and gluten</li>
@@ -37,7 +37,7 @@
 
             <!-- PLANT BURGER INFO-->
             <td>
-              <img src="https://www.max.se/contentassets/10aac66bde484d38bbf6e8b37c0e6e36/product_bbq-sandwich2.jpg" alt="Plant burger" width="150" align="middle">
+              <img src="https://www.max.se/contentassets/359fcb7f236247a7a4a41cdf2ddf36b0/product_delifresh-signature-plant-beef.jpg" alt="Plant burger" width="150" align="middle">
               <ul>
                 <li>Soy burger</li>
                 <li>Glutenfree</li>
@@ -47,7 +47,7 @@
 
             <!--BEEF BURGER INFO-->
             <td>
-              <img src="https://www.max.se/globalassets/promo-blocks/max-orginal-hamburgare-frilagd.jpg?width=400&height=400&bgcolor=white" alt="delicious beef burger" height="110"  align="middle">
+              <img src="https://www.max.se/contentassets/96a590c660f54c8b83bc5080b036fecf/product_gdl-umami-bacon-burger2.jpg" alt="delicious beef burger" width="150"  align="middle">
 
               <ul>
                 <li>Animal based burger</li>
@@ -59,12 +59,32 @@
         </table>
       </section>
 
-
-      <section>
+      <!--FORM - DELIVERY INFORMATION-->
+      <section id="contact information">
         <h2>Customer Information</h2>
         <p>Fill in your information below please. </p>
+
         <h2>Delivery Information</h2>
         <p>Where do you want your burgers delivered?</p>
+        <form>
+          <p>
+            <label for="Fullname">Fullname </label> <br>
+            <input id="Fullname"  type="text"placeholder="First and last name" required="required"/>
+          </p>
+          <p>
+            <label for="email">E-mail</label><br>
+            <input id="email"  type="email" placeholder="E-mail adress" required="required"/>
+          </p>
+          <p>
+            <label for="Street">Street</label><br>
+            <input id="Street" type="text" placeholder="Street" required="required"/>
+          </p>
+
+          <p>
+            <label for="HouseNumber">House number</label><br>
+            <input id="HouseNumber" type="tel"  placeholder="House number"required="required"/>
+          </p>
+        </form>
       </section>
       <!-- Det här är en kommentar -->
     </main>
