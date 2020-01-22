@@ -18,3 +18,8 @@ body {
 #Delinfo {
 
 }
+
+button:hover {
+    color: rgb(0,0,250);
+
+}
