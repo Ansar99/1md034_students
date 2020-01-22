@@ -5,3 +5,7 @@ body {
 
 
 }
+.alergies {
+    color: /*#ff5500*/ rgb(255,0,0);
+    font-weight: bold;
+}
