@@ -3,16 +3,26 @@ body {
     font-family: Verdana;
     font-size: 0.5cm;
     margin: 0 auto;
-
-
-
 }
+header h1 {
+    position: absolute em;
+    padding-bottom: 1em;
+}
+header img{
+    opacity: 0.5;
+    width: 100%;
+    height:auto;
+}
+
+
 #head{
     margin-top:  5%;
     border: 5px dashed rgb(100,150,200);
     margin-left: 1%;
     margin-right: 1%;
     padding-left: 1%;
+    overflow:hidden;
+    height: 10em;
 }
 .alergies {
     color: /*#ff5500*/ rgb(125,0,0);
@@ -23,7 +33,7 @@ body {
     background-color: rgb(0,0,0);
     text-emphasis-color: rgb(255,255,255);
     color: rgb(255,255,255);
-    margin-top:5%;
+    margin-top:3%;
     border: 5px dashed rgb(100,150,200);
     margin-left: 1%;
     margin-right: 1%;
@@ -31,7 +41,7 @@ body {
 
 }
 #Delinfo {
-    margin-top: 5%;
+    margin-top: 1%;
     border: 5px dashed rgb(100,150,200);
     margin-left: 1%;
     margin-right: 1%;
@@ -41,7 +51,6 @@ body {
 
 button:hover {
     color: rgb(0,0,250);
-
 }
 button{
     margin-top: 2%;
@@ -53,7 +62,4 @@ h2{
 table.center {
     margin: 0 auto;
     width:120% ;
-}
-header img{
-    opacity: 0.7;
 }
