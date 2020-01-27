@@ -21,7 +21,7 @@ header h1 {
 
 
 #head{
-    margin-top:  5%;
+    margin-top:  0.5%;
     border: 5px dashed rgb(220,220,220);
     margin-left: 1%;
     margin-right: 1%;
@@ -46,11 +46,11 @@ header h1 {
 }
 #Delinfo {
     margin-top: 1%;
-    border: 5px dashed rgb(220,220,200);
+    border: 5px dashed rgb(220,220,220);
     margin-left: 1%;
     margin-right: 1%;
     padding-left: 1%;
-
+    font-size:1.2em;
 }
 
 button:hover {
@@ -87,6 +87,7 @@ table.center {
 }
 
 .a {
+
     grid-column: 1 ;
     grid-row: 1;
 }

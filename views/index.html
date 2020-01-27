@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="js/js_script.js"></script>
+    <script src="js/vue_script.js"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Order your burgers!</title>
@@ -13,6 +16,7 @@
         <h1>Welcome to BurgerOnline!</h1>
         <img id="fig1"src="https://www.salzburgerhof.com/fileadmin/templates/img/slider/restaurant-jagdstube/018_Jagdstube_02-1.jpg" alt="Restaurant">
       </header>
+
       <section id="Burgerinfo">
         <h2 id="h2">Select Burgers!</h2>
         <p>Select your meal down below!</p>
@@ -20,6 +24,7 @@
 
         <div class="wrapper">
           <div class="a">
+            <h2>Halloumi Burger!</h2>
             <img src="https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg" alt = "Delicious halloumi burger" width="150">
             <ul>
               <li> Vegetarian </li>
@@ -30,6 +35,7 @@
 
           </div>
           <div class="b">
+            <h2>Planty Burger!</h2>
             <img src="https://www.max.se/contentassets/359fcb7f236247a7a4a41cdf2ddf36b0/product_delifresh-signature-plant-beef.jpg" alt="Plant burger" width="150" >
             <!-- PLANT BURGER INFO-->
             <ul>
@@ -39,9 +45,11 @@
             </ul>
           </div>
           <div class="c">
+            <h2>Meaty Burger!</h2>
             <img src="https://www.max.se/contentassets/96a590c660f54c8b83bc5080b036fecf/product_gdl-umami-bacon-burger2.jpg" alt="delicious beef burger" width="150"  >
             <!--BEEF BURGER INFO-->
             <ul>
+
               <li>Animal based burger</li>
               <li>Contains <span class="alergies">gluten</span></li>
               <li>1050 kcal</li>
@@ -88,11 +96,11 @@
           </p>
           <p>
             <label for="gender">Male</label><br>
-            <input id="gender" type="radio" name="gender"/> <br>
+            <input class="gender" type="radio" name="gender"/> <br>
             <label for="gender">Female</label><br>
-            <input id="gender" type="radio" name="gender"/><br>
+            <input class="gender" type="radio" name="gender" /><br>
             <label for="gender">Other</label><br>
-            <input id="gender" type="radio" name="gender"/>
+            <input class="gender" type="radio" name="gender" checked="checked"/>
           </p>
 
         </form>
