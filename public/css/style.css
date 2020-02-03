@@ -19,8 +19,11 @@ header h1 {
     height: 100%;
 }
 
-
+img{
+    width:100%;
+}
 #head{
+    
     margin-top:  0.5%;
     border: 5px dashed rgb(220,220,220);
     margin-left: 1%;
@@ -69,7 +72,7 @@ table.center {
     margin: 0 auto;
     width:120% ;
 }
-.wrapper{
+#grid{
     display: grid;
     grid-gap: 90px;
     grid-template-columns: 100px 100px 100px ;
@@ -103,4 +106,11 @@ table.center {
 section p {
 
     margin-bottom: 30px;
+}
+
+#img4{
+    width:5em;
+}
+#img5{
+    width:4em;
 }
