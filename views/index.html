@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <script src="https://vuejs.org/js/vue.js" ></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -21,11 +22,11 @@
         <h2 id="h2">Select Burgers!</h2>
         <p>Select your meal down below!</p>
         <div id="grid">
-          <div v-bind:style="{gridColumn:1}" > <img v-bind:src=v1.img alt="halloumi">{{v1.info()}}</div>
-          <div v-bind:style="{gridColumn:2}" v-bind:style="{width:10%}"> <img v-bind:src=v2.img alt="plant" >{{v2.info()}}</div>
-          <div v-bind:style="{gridColumn:3}"> <img v-bind:src=v3.img alt="meat">{{v3.info()}}</div>
-          <div v-bind:style="{gridcolumn: 4}"> <img v-bind:src=v4.img alt="Nasty" id="img4">{{v4.info()}}</div>
-          <div v-bind:style="{'gridColumn': '5'}"> <img v-bind:src=v5.img alt="candy" id="img5">{{v5.info()}}</div>
+          <div v-bind:style="{gridColumn:1}" > <img v-bind:src=v1.img alt="halloumi">{{v1.name}}</div>
+          <div v-bind:style="{gridColumn:2}" v-bind:style="{width:10%}"> <img v-bind:src=v2.img alt="plant" >{{v2.name}}</div>
+          <div v-bind:style="{gridColumn:3}"> <img v-bind:src=v3.img alt="meat">{{v3.name}}</div>
+          <div v-bind:style="{gridcolumn: 4}"> <img v-bind:src=v4.img alt="Nasty" id="img4">{{v4.name}}</div>
+          <div v-bind:style="{'gridColumn': '5'}"> <img v-bind:src=v5.img alt="candy" id="img5">{{v5.name}}</div>
         </div>
 
       </section>

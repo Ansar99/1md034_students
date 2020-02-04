@@ -1,4 +1,4 @@
-function menuItem(name, kcal, alergies,img) {
+/*function menuItem(name, kcal, alergies,img) {
 
     this.name = name;
     this.kcal = kcal;
@@ -21,16 +21,16 @@ let meat = new menuItem("Meaty Burger", 1050, "lactose and gluten", "https://www
 
 let nasty = new menuItem("JustNasty", 1250, "Burnt burger","https://bloody-disgusting.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-11-at-9.23.59-AM.jpg");
 
-let candy = new menuItem("Candy Burger", 999999, "SWEEEET", "https://www.cooperscandy.com/cache/e3/600x600-prod_24558.jpg");
+let candy = new menuItem("Candy Burger", 99999, "SWEEEET", "https://www.cooperscandy.com/cache/e3/600x600-prod_24558.jpg");*/
 
 const vm = new Vue({
     el: '#grid',
     data: {
-        v1: halloumi,
-        v2: plant,
-        v3: meat,
-        v4: nasty,
-        v5: candy,
+        v1: food[0],
+        v2: food[1],
+        v3: food[2],
+        v4: food[3],
+        v5: food[4],
 
 
     }
