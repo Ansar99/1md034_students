@@ -32,6 +32,7 @@ const vm = new Vue({
         v4: nasty,
         v5: candy,
 
+
     }
 
 })
