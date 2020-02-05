@@ -1,32 +1,26 @@
-/*function menuItem(name, kcal, alergies) {
+//document.getElementById('button').addEventListener("click",function() {console.log("Hello World!");} );
 
-  this.name = name;
-  this.kcal = kcal;
-  this.alergies = alergies;
-  this.path = function(p) {
-    this.path = p;
-  }
-    this.getInfo() = function() {
-       return this.name +" " +this.kcal + " " +this.alergies;
-  }
+
+function ins(gender){
+    document.getElementById("result").value = gender;
 
 }
 
-let halloumi = new menuItem("Halloumi", 987, "lactose");
-halloumi.path("https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg");
+function getDetails(){
 
-let plant = new menuItem("Planty Burger", 679, "None");
-plant.path("https://www.max.se/contentassets/359fcb7f236247a7a4a41cdf2ddf36b0/product_delifresh-signature-plant-beef.jpg");
+    let fullname = document.getElementById("Fullname").value;
+    let email = document.getElementById("email").value;
+    let street = document.getElementById("Street").value;
+    let houseNumber = document.getElementById("HouseNumber").value;
+    let method = document.getElementById("Payment").value;
+    let gender = document.getElementById("result").value;
 
-let meat = new menuItem("Meaty Burger", 1050, "lactose and gluten");
-meat.path("https://www.max.se/contentassets/96a590c660f54c8b83bc5080b036fecf/product_gdl-umami-bacon-burger2.jpg");
+    let arr = [fullname,email,houseNumber,method,gender];
+    return arr;
 
-let nasty = new menuItem("JustNasty", 1250, "Burnt burger");
-nasty.path("https://bloody-disgusting.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-11-at-9.23.59-AM.jpg");
+}
 
-let candy = new menuItem("Candy Burger", 999999, "SWEEEET");
-candy.path("https://www.cooperscandy.com/cache/e3/600x600-prod_24558.jpg");
-
+/*
 let p1 = document.createElement('p');
 let p2 = document.createElement('p');
 let p3 = document.createElement('p');
@@ -91,8 +85,8 @@ let target = document.getElementById("grid");
 for (let x of menu) {
 target.appendChild(x);
 }
-
 */
+
 /*
         <div class="wrapper">
           <div class="a">

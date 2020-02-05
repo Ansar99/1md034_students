@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <main>
+    <main id="main">
       <header id="head">
         <h1>Welcome to BurgerOnline!</h1>
         <img id="fig1"src="https://www.salzburgerhof.com/fileadmin/templates/img/slider/restaurant-jagdstube/018_Jagdstube_02-1.jpg" alt="Restaurant">
@@ -22,12 +22,65 @@
         <h2 id="h2">Select Burgers!</h2>
         <p>Select your meal down below!</p>
         <div id="grid">
-          <div v-bind:style="{gridColumn:1}" > <img v-bind:src=v1.img alt="halloumi">{{v1.name}}</div>
-          <div v-bind:style="{gridColumn:2}" v-bind:style="{width:10%}"> <img v-bind:src=v2.img alt="plant" >{{v2.name}}</div>
-          <div v-bind:style="{gridColumn:3}"> <img v-bind:src=v3.img alt="meat">{{v3.name}}</div>
-          <div v-bind:style="{gridcolumn: 4}"> <img v-bind:src=v4.img alt="Nasty" id="img4">{{v4.name}}</div>
-          <div v-bind:style="{'gridColumn': '5'}"> <img v-bind:src=v5.img alt="candy" id="img5">{{v5.name}}</div>
+          <div v-bind:style="{gridColumn:1}">
+
+            <img v-bind:src=v1.img alt="halloumi">
+            {{v1.name}}
+
+
+          </div>
+          <div v-bind:style="{gridColumn:2}" v-bind:style="{width:10%}">
+
+            <img v-bind:src=v2.img alt="plant">
+            {{v2.name}}
+
+          </div>
+          <div v-bind:style="{gridColumn:3}">
+
+            <img v-bind:src=v3.img alt="meat">
+            {{v3.name}}
+
+          </div>
+          <div v-bind:style="{gridcolumn: 4}">
+
+            <img v-bind:src=v4.img alt="Nasty" id="img4">
+            {{v4.name}}
+
+          </div>
+
+          <div v-bind:style="{'gridColumn': '5'}">
+
+            <img v-bind:src=v5.img alt="candy" id="img5">
+            {{v5.name}}
+
+          </div>
+           <label for="candy"></label>
+
+
         </div>
+        <div>
+          <label for="halloumi"> halloumi</label>
+          <input type="checkbox" id="halloumi" value="halloumi"  v-model="checkedBurger">
+          <br>
+
+          <label for="plant">plant</label>
+          <input type="checkbox" id="plant" value="plant"  v-model="checkedBurger">
+          <br>
+
+          <label for="meat">meat</label>
+          <input type="checkbox" id="meat" value="meat"  v-model="checkedBurger">
+          <br>
+
+          <label for="nasty">nasty</label>
+          <input type="checkbox" id="candy" value="nasty"  v-model="checkedBurger">
+          <br>
+
+          <label for="candy">candy</label>
+          <input type="checkbox" id="candy" value="candy"  v-model="checkedBurger">
+          {{checkedBurger}}
+        </div>
+
+
 
       </section>
 
@@ -38,52 +91,64 @@
 
         <h2>Delivery Information</h2>
         <p>Where do you want your burgers delivered?</p>
-        <form>
+        <form id="form">
           <p>
             <label for="Fullname">Fullname </label> <br>
-            <input id="Fullname"  type="text" placeholder="First and last name" required="required"/>
+            <input v-model="Fullname" id="Fullname"   placeholder="First and last name" required="required"/>
           </p>
           <p>
             <label for="email">E-mail</label><br>
-            <input id="email"  type="email" placeholder="E-mail adress" required="required"/>
+            <input v-model="email" id="email"  type="email" placeholder="E-mail adress" required="required"/>
           </p>
           <p>
             <label for="Street">Street</label><br>
-            <input id="Street" type="text" placeholder="Street" required="required"/>
+            <input v-model="Street" id="Street" type="text" placeholder="Street" required="required"/>
           </p>
 
           <p>
             <label for="HouseNumber">House number</label><br>
-            <input id="HouseNumber" type="tel"  placeholder="House number"required="required"/>
+            <input v-model.number="HouseNumber"id="HouseNumber" type="tel"  placeholder="House number"required="required"/>
           </p>
           <p>
             <label for="Payment">Payment method</label><br>
-            <select id="Payment">
-              <option>Nordea</option>
+            <select v-model="selected" id="Payment">
+              <option>Paypal</option>
               <option selected="selected">Klarna</option>
               <option>Swedbank</option>
               <option>AnsarsBank</option>
             </select>
+
           </p>
           <p>
             <label for="gender">Male</label><br>
-            <input class="gender" type="radio" name="gender"/> <br>
+            <input v-model="gender" class="gender" type="radio" name="gender" value="Male" onclick="ins(this.value)"/> <br>
             <label for="gender">Female</label><br>
-            <input class="gender" type="radio" name="gender" /><br>
+            <input v-model="gender" class="gender" type="radio" name="gender" value="Female" onclick="ins(this.value)"/><br>
             <label for="gender">Other</label><br>
-            <input class="gender" type="radio" name="gender" checked="checked"/>
+            <input v-model="gender" class="gender" type="radio" name="gender" value="other" onclick="ins(this.value)"checked="checked"/> <br>
+
+            <input id="result" type="text" required="required"/>
           </p>
 
         </form>
+
+
+
       </section>
-      <button type="submit"><img src="https://www.emojimeaning.com/img/img-apple-160/1f4ec.png" width="15">Place my order!</buttonx>
+      <div id="last">
+        <button id="button" v-on:click="addInfo" type="submit"><img src="https://www.emojimeaning.com/img/img-apple-160/1f4ec.png" width="10" id="bimg">Place my order!</button>
+        <ul>
+          <li v-for="obj in arr"> {{obj}} </li>
+        </ul>
+      </div>
       <!-- Det här är en kommentar -->
     </main>
 
     <footer>
       <hr/>
-      <p> &copy; 2020 Frickinn Burger inc </p>
+      <p> &copy; 2020 Get em burgers </p>
     </footer>
 
   </body>
+
 </html>
