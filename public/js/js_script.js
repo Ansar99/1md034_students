@@ -1,4 +1,4 @@
-//document.getElementById('button').addEventListener("click",function() {console.log("Hello World!");} );
+//document.getElementById('button').addEventListener("click",function() {console.log("Hello World");},false );
 
 
 function ins(gender){
@@ -86,40 +86,3 @@ for (let x of menu) {
 target.appendChild(x);
 }
 */
-
-/*
-        <div class="wrapper">
-          <div class="a">
-            <h2>Halloumi Burger!</h2>
-            <img src="https://www.max.se/contentassets/00848003f52b4c8d8dcf139ecdb3fc1e/product_gdl-umami-halloumi2.jpg" alt = "Delicious halloumi burger" width="150">
-            <ul>
-              <li>Vegetarian </li>
-              <li>contains <span class="alergies">lactose</span></li>
-              <li>987 kcal</li>
-            </ul>
-
-
-          </div>
-          <div class="b">
-            <h2>Planty Burger!</h2>
-            <img src="https://www.max.se/contentassets/359fcb7f236247a7a4a41cdf2ddf36b0/product_delifresh-signature-plant-beef.jpg" alt="Plant burger" width="150" >
-            <!-- PLANT BURGER INFO-->
-            <ul>
-              <li>Vegan</li>
-              <li>Soy burger</li>
-              <li>679 kcal</li>
-            </ul>
-          </div>
-          <div class="c">
-            <h2>Meaty Burger!</h2>
-            <img src="https://www.max.se/contentassets/96a590c660f54c8b83bc5080b036fecf/product_gdl-umami-bacon-burger2.jpg" alt="delicious beef burger" width="150"  >
-            <!--BEEF BURGER INFO-->
-            <ul>
-
-              <li>Animal based burger</li>
-              <li>Contains <span class="alergies">gluten</span></li>
-              <li>1050 kcal</li>
-            </ul>
-          </div>
-
-        </div>*/
