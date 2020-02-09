@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/deli-very.css">
-    <script src="/vue/vue.js" defer></script>
-    <script src="/socket.io/socket.io.js" defer></script>
-    <script src="js/deli-very.js" defer></script>
     <script src="https://vuejs.org/js/vue.js" ></script>
+    <script src="/socket.io/socket.io.js" defer></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
+    <link rel="stylesheet" href="css/deli-very.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <title>Order your burgers!</title>
     <meta charset="utf-8"/>
   </head>
@@ -83,6 +82,7 @@
           <input type="checkbox" id="candy" value="candy"  v-model="checkedBurger">
           {{checkedBurger}}
         </div>
+        </div>
 
 
 
@@ -129,11 +129,10 @@
           <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
           <p>
             <div class="view-box">
-              <div id="dots" v-on:click="addOrder">
+              <div id="dots" v-on:click="displayOrder">
                 <div
-                  v-for="(order, key) in orders"
                   v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
-                  {{key}}
+                  {{order.orderId}}
                 </div>
               </div>
             </div>
@@ -141,8 +140,8 @@
         </form>
       </section>
 
-      <div id="last">
-        <button id="button" v-on:click="addInfo" type="submit"><img src="https://www.emojimeaning.com/img/img-apple-160/1f4ec.png" width="10" id="bimg">Place my order!</button>
+      <div id="last" >
+        <button id="button" v-on:click="addOrder"  type="submit"><img src="https://www.emojimeaning.com/img/img-apple-160/1f4ec.png" width="10" id="bimg">Place my order!</button>
         <ul>
           <li v-for="obj in arr"> {{obj}} </li>
         </ul>
